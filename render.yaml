@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: pulserelay-signaling
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: WS_PATH
+        value: /ws
+      - key: AUTH_MODE
+        value: dev
+      - key: ALLOW_DEV_AUTH
+        value: "true"

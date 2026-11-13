@@ -1,0 +1,15 @@
+{
+  "name": "pulserelay-signaling-server",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Ephemeral WebSocket signaling and presence server for PulseRelay Phase 2A (no message/media storage).",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
